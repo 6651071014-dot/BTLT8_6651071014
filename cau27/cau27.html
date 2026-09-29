@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 27 - Xóa Dòng Bang</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #b3ffb3;
+        }
+    </style>
+</head>
+<body>
+
+    <table id="bangSanPham">
+        <thead>
+            <tr>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Tổng</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>1000000</td>
+                <td>2000000</td>
+                <td><button type="button" onclick="xoaDong(this)">Xóa</button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>500000</td>
+                <td>500000</td>
+                <td><button type="button" onclick="xoaDong(this)">Xóa</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="Script/cau27.js"></script>
+</body>
+</html>
