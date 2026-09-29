@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 25 - Tính Tiền Thực Đơn</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px 15px;
+        }
+        .bg-menu { background-color: #ccff00; }
+        .bg-result { background-color: #87ceeb; }
+        .title { font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table class="bg-menu">
+            <tr>
+                <td colspan="3" class="title">THỰC ĐƠN</td>
+            </tr>
+            <tr class="title">
+                <td>Thức ăn</td>
+                <td>Nước uống</td>
+                <td>Thời điểm</td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="thucAn" multiple size="7">
+                        <option value="20000">Bún bò</option>
+                        <option value="18000">Hủ tiếu</option>
+                        <option value="17000">Bánh canh</option>
+                        <option value="19000">Phở bò</option>
+                        <option value="15000">Nuôi</option>
+                        <option value="12000">Bánh mì thịt</option>
+                        <option value="15000">Bánh cuốn</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="nuocUong" multiple size="7">
+                        <option value="12000">Cà phê đá</option>
+                        <option value="15000">Cà phê sữa đá</option>
+                        <option value="13000">Chanh dây</option>
+                        <option value="12000">Chanh muối</option>
+                        <option value="14000">Xí muội</option>
+                        <option value="13000">Sữa tươi</option>
+                        <option value="17000">Cam vắt</option>
+                    </select>
+                </td>
+                <td style="vertical-align: top;">
+                    <label><input type="radio" name="thoiDiem" value="day" checked> Ban ngày</label><br><br>
+                    <label><input type="radio" name="thoiDiem" value="night"> Ban đêm</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">
+                    <button type="button" onclick="tinhTien()">Tính tiền</button>
+                </td>
+            </tr>
+        </table>
+
+        <table class="bg-result" id="bangKetQua" style="min-width: 300px;">
+            <tr class="title">
+                <td>Các món đã dùng</td>
+                <td>Tiền</td>
+            </tr>
+            <tbody id="danhSachMon">
+                <!-- Danh sách món sẽ hiện ở đây -->
+            </tbody>
+            <tr>
+                <td class="title">Tổng tiền</td>
+                <td id="tongTien" style="font-weight: bold;">0 đồng</td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="Script/cau25.js"></script>
+</body>
+</html>
