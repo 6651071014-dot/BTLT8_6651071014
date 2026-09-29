@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 23</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: #ffd8d8;
+        }
+        table, td {
+            border: 2px solid blue;
+            padding: 5px 10px;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Lương</td>
+                <td><input type="number" id="luong" value="1000000"></td>
+            </tr>
+            <tr>
+                <td>Hệ số lương</td>
+                <td><input type="number" id="heSo" step="0.1" value="3.2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-center">
+                    <input type="button" value="Tính lương tháng" onclick="tinhLuong()">
+                </td>
+            </tr>
+            <tr>
+                <td>Lương tháng</td>
+                <td><input type="text" id="luongThang" readonly></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="Script/cau23.js"></script>
+</body>
+</html>
