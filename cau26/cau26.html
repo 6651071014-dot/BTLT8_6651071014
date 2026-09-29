@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 26 - Tính Can Chi</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: #b2ffff;
+        }
+        td, th {
+            padding: 8px 15px;
+            text-align: center;
+        }
+        .title {
+            background-color: #ccff00;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <table border="1">
+            <tr>
+                <td colspan="3" class="title">TÍNH CAN CHI CỦA NGÀY ÂM LỊCH</td>
+            </tr>
+            <tr style="font-weight: bold;">
+                <td>Năm dương lịch</td>
+                <td></td>
+                <td>Can chi năm âm lịch</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="namDuong" value="2015" style="width: 100px; text-align: center;">
+                </td>
+                <td>
+                    <button type="button" onclick="tinhCanChi()">---></button>
+                </td>
+                <td>
+                    <input type="text" id="canChi" readonly style="width: 120px; text-align: center; color: red; font-weight: bold;">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="Script/cau26.js"></script>
+</body>
+</html>
