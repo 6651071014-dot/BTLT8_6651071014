@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 24</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: #ffd8d8;
+        }
+        table, td {
+            border: 2px solid blue;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    Ngày <input type="number" id="ngay" value="12" style="width: 50px;">
+                    Tháng Select: <input type="number" id="thang" value="1" min="1" max="12" style="width: 50px;">
+                    năm <input type="number" id="nam" value="2015" style="width: 70px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Xuất thứ" onclick="xuatThu()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="ketQua" style="font-weight: bold;"></span>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="Script/cau24.js"></script>
+</body>
+</html>
